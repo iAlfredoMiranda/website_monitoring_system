@@ -31,7 +31,7 @@ func main() {
 		startMonitoring()
 	case 2:
 		fmt.Println("Exibindo Logs")
-		imprimeLogs()
+		printLogs()
 	case 0:
 		fmt.Println("Saindo do Programa")
 		os.Exit(0)
@@ -157,7 +157,7 @@ func recordLog(site string, status bool) {
 }
 
 // this func show logs
-func imprimeLogs() {
+func printLogs() {
 
 	arquivo, err := ioutil.ReadFile("log.txt")
 
